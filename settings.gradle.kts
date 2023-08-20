@@ -18,3 +18,4 @@ include(":app")
 
 include(":feature:weather")
 include(":feature:locations")
+include(":feature:settings")
