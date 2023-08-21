@@ -17,7 +17,7 @@ fun SettingsScreen(){
         contentAlignment = Alignment.Center
     ){
         Text(
-            "Manage Cities",
+            "Settings",
             fontSize = 25.sp
         )
     }

@@ -13,6 +13,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
+import com.jk.weather.navigation.WeatherNavGraph
 import com.jk.weather.ui.theme.WeatherTheme
 
 class MainActivity : ComponentActivity() {
@@ -25,16 +26,17 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Box(
-                        modifier = Modifier
-                            .fillMaxSize(),
-                        contentAlignment = Alignment.Center
-                    ){
-                        Text(
-                            "WEATHER",
-                            fontSize = 25.sp
-                        )
-                    }
+//                    Box(
+//                        modifier = Modifier
+//                            .fillMaxSize(),
+//                        contentAlignment = Alignment.Center
+//                    ){
+//                        Text(
+//                            "WEATHER",
+//                            fontSize = 25.sp
+//                        )
+//                    }
+                    WeatherNavGraph()
                 }
             }
         }

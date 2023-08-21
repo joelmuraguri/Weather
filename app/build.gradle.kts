@@ -55,6 +55,12 @@ android {
 
 dependencies {
 
+    implementation(project(":core:design"))
+    implementation(project(":feature:weather"))
+    implementation(project(":feature:locations"))
+    implementation(project(":feature:settings"))
+
+
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)
     implementation(libs.androidx.lifecycle.runtimeCompose)
