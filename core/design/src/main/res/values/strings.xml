@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_title">Settings</string>
+    <string name="edit_title">Edit</string>
+    <string name="manage_cities_title">Manage Cities</string>
+    <string name="arrow_back_icon_description">Arrow Back Icon</string>
+    <string name="more_options_icon_description">More Options Icon</string>
+    <string name="add_icon_description">Add Icon</string>
+    <string name="add_location_icon_description">Add Location Icon</string>
+</resources>
