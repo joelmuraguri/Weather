@@ -15,7 +15,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import com.jk.weather.navigation.WeatherNavGraph
 import com.jk.weather.ui.theme.WeatherTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,16 +28,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-//                    Box(
-//                        modifier = Modifier
-//                            .fillMaxSize(),
-//                        contentAlignment = Alignment.Center
-//                    ){
-//                        Text(
-//                            "WEATHER",
-//                            fontSize = 25.sp
-//                        )
-//                    }
+
                     WeatherNavGraph()
                 }
             }
