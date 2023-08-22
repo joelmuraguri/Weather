@@ -82,7 +82,7 @@ dependencies {
     implementation(libs.squareup.okhttp3.logging)
     kapt(libs.hilt.compiler)
     kaptAndroidTest(libs.hilt.compiler)
-    annotationProcessor(libs.room.compiler)
+    kapt(libs.room.compiler)
     ksp(libs.room.compiler)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
