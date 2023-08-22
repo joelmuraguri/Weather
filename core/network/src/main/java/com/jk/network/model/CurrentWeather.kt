@@ -1,10 +1,18 @@
 package com.jk.network.model
 
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
+
+@Serializable
 data class CurrentWeather(
-    val is_day: Int,
+    @SerialName("is_day")
+    val isDay: Int,
     val temperature: Double,
     val time: String,
-    val weathercode: Int,
-    val winddirection: Int,
-    val windspeed: Double
+    @SerialName("weathercode")
+    val weatherCode: Int,
+    @SerialName("winddirection")
+    val windDirection: Int,
+    @SerialName("windspeed")
+    val windSpeed: Double
 )

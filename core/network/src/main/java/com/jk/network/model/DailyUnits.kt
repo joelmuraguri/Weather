@@ -1,8 +1,15 @@
 package com.jk.network.model
 
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
+
+@Serializable
 data class DailyUnits(
-    val temperature_2m_max: String,
-    val temperature_2m_min: String,
+    @SerialName("temperature_2m_max")
+    val temperature2mMax: String,
+    @SerialName("temperature_2m_min")
+    val temperature2mMin: String,
     val time: String,
-    val uv_index_max: String
+    @SerialName("uv_index_max")
+    val uvIndexMax: String
 )

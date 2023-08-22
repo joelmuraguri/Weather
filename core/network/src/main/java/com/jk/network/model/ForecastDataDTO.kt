@@ -1,16 +1,26 @@
 package com.jk.network.model
 
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
+
+@Serializable
 data class ForecastDataDTO(
-    val current_weather: CurrentWeather,
+    @SerialName("current_weather")
+    val currentWeather: CurrentWeather,
     val daily: Daily,
-    val daily_units: DailyUnits,
+    @SerialName("daily_units")
+    val dailyUnits: DailyUnits,
     val elevation: Double,
-    val generationtime_ms: Double,
+    @SerialName("generationtime_ms")
+    val generationTimeMs: Double,
     val hourly: Hourly,
-    val hourly_units: HourlyUnits,
+    @SerialName("hourly_units")
+    val hourlyUnits: HourlyUnits,
     val latitude: Double,
     val longitude: Double,
     val timezone: String,
-    val timezone_abbreviation: String,
-    val utc_offset_seconds: Int
+    @SerialName("timezone_abbreviation")
+    val timezoneAbbreviation: String,
+    @SerialName("utc_offset_seconds")
+    val utcOffsetSeconds: Int
 )
