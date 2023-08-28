@@ -1,5 +1,5 @@
 [versions]
-agp = "8.2.0-alpha15"
+agp = "8.2.0-alpha16"
 kotlin = "1.8.21"
 core-ktx = "1.10.1"
 junit = "4.13.2"
@@ -21,6 +21,7 @@ serialization = "1.8.0"
 okhttp3 = "5.0.0-alpha.2"
 room = "2.5.2"
 androidxDataStore = "1.0.0"
+org-jetbrains-kotlin-jvm = "1.8.21"
 
 
 [libraries]
@@ -71,6 +72,7 @@ hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 serialization = {id = "org.jetbrains.kotlin.plugin.serialization", version.ref="serialization" }
+org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "org-jetbrains-kotlin-jvm" }
 
 
 
