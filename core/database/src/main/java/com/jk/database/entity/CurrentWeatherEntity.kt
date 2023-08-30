@@ -5,8 +5,8 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "Current_Weather_Table")
 data class CurrentWeatherEntity(
-    @PrimaryKey val id: Int,
-    val weatherForecastId: Int,
+    @PrimaryKey val id: Int ? = null,
+    val weatherForecastId: Int ? = null,
     val isDay: Int,
     val temperature: Double,
     val time: String,

@@ -8,8 +8,8 @@ import com.jk.database.converters.StringListConverter
 
 @Entity(tableName = "Daily_Table")
 data class DailyEntity(
-    @PrimaryKey val id: Int,
-    val weatherForecastId: Int, // Foreign key referencing WeatherForecastEntity
+    @PrimaryKey val id: Int ? = null,
+    val weatherForecastId: Int ? = null, // Foreign key referencing WeatherForecastEntity
     @TypeConverters(DoubleListConverter::class)
     val temperature2mMax: List<Double>,
     @TypeConverters(DoubleListConverter::class)

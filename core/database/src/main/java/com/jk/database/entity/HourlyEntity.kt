@@ -9,8 +9,8 @@ import com.jk.database.converters.StringListConverter
 
 @Entity(tableName = "Hourly_Table")
 data class HourlyEntity(
-    @PrimaryKey val id: Int,
-    val weatherForecastId: Int,
+    @PrimaryKey val id: Int ? = null,
+    val weatherForecastId: Int ? = null,
     @TypeConverters(IntListConverters::class)
     val relativeHumidity2m: List<Int>,
     @TypeConverters(DoubleListConverter::class)
