@@ -56,6 +56,8 @@ android {
 dependencies {
 
     implementation(project(":core:design"))
+    implementation(project(":core:network"))
+    implementation(project(":core:database"))
     implementation(project(":feature:weather"))
     implementation(project(":feature:locations"))
     implementation(project(":feature:settings"))
